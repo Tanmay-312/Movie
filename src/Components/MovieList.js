@@ -6,7 +6,7 @@ export const MovieList = ({ movies, onMovieSelect }) => {
     <div className="movie-list">
       {movies.map((movie) => (
         <div key={movie.id} className="movie-item" onClick={() => onMovieSelect(movie)}>
-          <img src={movie.image} alt={movie.title} className="movie-image" />
+          <img src={movie.imgSrc} alt={movie.title} className="movie-image" />
           <h2>{movie.title}</h2>
           <p>{movie.description}</p>
         </div>
