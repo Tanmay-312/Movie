@@ -14,7 +14,7 @@ const MovieDetails = ({ movie, onReviewSubmit, onReviewDelete, onReviewEdit, edi
     <div className="movie-details">
       <h2>{movie.title}</h2>
       <p>{movie.description}</p>
-      <img src={movie.image} alt={movie.title} className="movie-image" />
+      <img src={movie.imgSrc} alt={movie.title} className="movie-image" />
 
       <h3>Reviews:</h3>
       <div className="review-list">
