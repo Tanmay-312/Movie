@@ -1,0 +1,47 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-item {
+    background-color: #ff0000;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px; /* Set the width */
+    height: 250px; /* Adjusted height to accommodate image, title, and description */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center; /* Ensure text is centered */
+    transition: background-color 0.3s ease;
+    overflow: hidden; /* Ensures content doesn't overflow */
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 120px; /* Adjust max-height to fit within the square */
+    border-radius: 4px;
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    margin-bottom: 10px; /* Space between image and title */
+  }
+  
+  .movie-item h2 {
+    margin: 5px 0;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .movie-item p {
+    color: #f1f1f1;
+    font-size: 14px;
+  }
+  
+  .movie-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
